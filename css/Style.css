@@ -1,0 +1,256 @@
+* {
+	margin:0;
+	padding:0;
+	border:0;
+	font-family: verdana, sans-serif;
+	}
+.wrapper {
+	width:1100px;
+	padding: 27px 50px 140px 50px;
+	margin: 0 auto;
+	background:#f1f1f1;
+}
+h2 {
+	font-size:27px;
+	font-family: verdana;
+	font-weight:normal;
+	color:#49474c;
+	margin-bottom: 30px;
+}
+#widget_1 {
+	width:692px;
+	background:#ffffff;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding: 17px 19px 0px 19px;
+}
+.head {
+	padding-bottom:15px;
+	overflow: hidden;
+}
+.button {
+	width:76px;
+	height:30px;
+	border-radius:4px;
+	float:right;
+	padding:2px;
+	text-align: center;
+}
+.disabled {
+	background:black;
+}
+#white_box {
+	width:36px;
+	height:30px;
+	background:#ffffff;
+	border-radius:3px;
+	float: left;
+	margin-right:4px;
+	
+}
+#white_box a {
+	display:block;
+	height:100%;
+}
+.move {
+	text-align:center;
+	padding-top:5px;
+	color:#ffffff;
+}
+h3 {
+	font-size: 18px;
+	font-weight: normal;
+}
+h3+a {
+	font-size: 13px;
+	text-decoration: none;
+	color:#0089c0;
+	font-weight: bold;
+}
+#widget_2 {
+	width: 692px;
+	background: #ffffff;
+	border-radius: 5px;
+  padding: 17px 19px 25px 19px;
+}
+#widget_2 .head {
+	border-bottom: 1px solid #f1f1f0;
+}
+.enabled {
+	background: #00a863;
+}
+.enabled #white_box {
+	float:right;
+	margin: 0;
+	margin-left: 4px;
+}
+i {
+	display: block;
+	padding: 7px;
+	color: white;
+}
+.selection li {
+	display: inline-block;
+	text-align: center;
+	margin-right: 75px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #484742;
+	list-style-type: none;
+}
+.selection li:last-of-type {
+	margin-right: 0;
+}
+.selection {
+	padding-top: 60px;
+	padding-bottom: 45px;
+	width: 640px;
+	margin: 0 auto;
+}
+.selection li a {
+	display: block;
+	width: 155px;
+	height:113px;
+	border: 1px solid #f1f1f0;
+	border-radius: 5px;
+	background: url(../img/below-icon@1x.png) center no-repeat;
+	margin-bottom: 5px;
+}
+.selection li:nth-of-type(2) a {background-image: url(../img/reviewstab-icon@1x.png)}
+.selection li:nth-of-type(3) a {background-image: url(../img/custom-icon@1x.png)}
+.green_check {
+	position: absolute;
+	background: rgba(0, 164, 92, 0.2);
+	display: none;
+	width: 155px;
+	height:78px;
+	border-radius: 5px;
+	text-align: center;
+	padding-top: 35px;
+}
+.selection li a:hover .green_check{
+	display: block;
+}
+.green_check::before{
+	font-family: FontAwesome;
+	content:"\f058";
+	color: #00a863;
+	font-size: 40px;
+}
+ol li {
+	font-size: 12px;
+	color:#454545;
+	list-style-position:inside;
+	margin-bottom: 5px;
+}
+ol {
+	background: #e5e5e5;
+	padding: 17px;
+	border-radius: 5px;
+}
+ol h3 {
+	color: #454545;
+	margin-bottom: 20px;
+}
+ol h3::before{
+	font-family: FontAwesome;
+	content:"\f05a";
+	color:#9a9496;
+	margin-right: 10px;
+	font-size: 20px;
+}
+.check {
+	margin:33px 0px;
+}
+form p {
+	font-size: 13px;
+	color:#454545;
+}
+.save {
+	display: block;
+	width: 282px;
+	height: 50px;
+	border-radius: 5px;
+	background: #00b0eb;
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.support {
+	width: 316px;
+	float: right;
+	margin-left: 23px;
+	padding: 17px 17px 25px 17px;
+	background: #ffffff;
+	border-radius: 5px;
+}
+.support li {
+	list-style-type: none;
+	list-style-position: inside;
+}
+h4 {
+	font-size: 15px;
+	font-weight: normal;
+	margin-bottom: 15px;
+}
+h4::before{
+	font-family: FontAwesome;
+	content:"\f1cd";
+	margin-right: 10px;
+	color: #969a9b;
+}
+.support p {
+	font-size: 12px;
+	color: #969a9b;
+	margin-bottom: 27px;
+}
+.support li a {
+	font-size: 13px;
+	text-decoration: none;
+	color:#0089c0;
+	font-weight: bold;
+}
+.support li {
+	margin-bottom: 10px;
+	padding-left: 5px;
+}
+.support li:nth-of-type(1)::before{
+	font-family: FontAwesome;
+	content:"\f095";
+	margin-right: 10px;
+}
+.support li:nth-of-type(2)::before{
+	font-family: FontAwesome;
+	content:"\f0e0";
+	margin-right: 10px;
+}
+.support li:nth-of-type(3)::before{
+	font-family: FontAwesome;
+	content:"\f128";
+	margin-right: 10px;
+}
+.dashboard {
+	width: 350px;
+	height: 50px;
+	clear: right;
+	float: right;
+	background:#0089c0;
+	border-radius: 5px;
+	display: table;
+	margin-top: 8px;
+}
+.dashboard a {
+	text-decoration: none;
+	display: table-cell;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: bold;
+}
+.dashboard a::after{
+	font-family: FontAwesome;
+	content: "\f178";
+	margin-left: 10px;
+}
