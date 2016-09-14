@@ -22,10 +22,9 @@ h2 {
 	background:#ffffff;
 	border-radius: 5px;
 	margin-bottom: 10px;
-	padding: 17px 19px 0px 19px;
+	padding: 17px 19px 15px 19px;
 }
 .head {
-	padding-bottom:15px;
 	overflow: hidden;
 }
 .button {
@@ -35,11 +34,12 @@ h2 {
 	float:right;
 	padding:2px;
 	text-align: center;
+	cursor: pointer;
 }
 .disabled {
 	background:black;
 }
-#white_box {
+.white_box {
 	width:36px;
 	height:30px;
 	background:#ffffff;
@@ -48,7 +48,7 @@ h2 {
 	margin-right:4px;
 	
 }
-#white_box a {
+.white_box a {
 	display:block;
 	height:100%;
 }
@@ -61,11 +61,14 @@ h3 {
 	font-size: 18px;
 	font-weight: normal;
 }
-h3+a {
+.blue_link {
 	font-size: 13px;
 	text-decoration: none;
 	color:#0089c0;
 	font-weight: bold;
+}
+.blue_link:hover {
+	color:#0FBAFB;
 }
 #widget_2 {
 	width: 692px;
@@ -73,13 +76,10 @@ h3+a {
 	border-radius: 5px;
   padding: 17px 19px 25px 19px;
 }
-#widget_2 .head {
-	border-bottom: 1px solid #f1f1f0;
-}
 .enabled {
 	background: #00a863;
 }
-.enabled #white_box {
+.enabled .white_box {
 	float:right;
 	margin: 0;
 	margin-left: 4px;
@@ -167,14 +167,12 @@ form p {
 	color:#454545;
 }
 .save {
-	display: block;
+	display: table;
 	width: 282px;
 	height: 50px;
 	border-radius: 5px;
 	background: #00b0eb;
-	font-size: 13px;
-	color: #ffffff;
-	font-weight: bold;
+	margin-top:20px;
 }
 .support {
 	width: 316px;
@@ -204,12 +202,6 @@ h4::before{
 	color: #969a9b;
 	margin-bottom: 27px;
 }
-.support li a {
-	font-size: 13px;
-	text-decoration: none;
-	color:#0089c0;
-	font-weight: bold;
-}
 .support li {
 	margin-bottom: 10px;
 	padding-left: 5px;
@@ -217,7 +209,7 @@ h4::before{
 .support li:nth-of-type(1)::before{
 	font-family: FontAwesome;
 	content:"\f095";
-	margin-right: 10px;
+	margin-right: 12px;
 }
 .support li:nth-of-type(2)::before{
 	font-family: FontAwesome;
@@ -227,7 +219,7 @@ h4::before{
 .support li:nth-of-type(3)::before{
 	font-family: FontAwesome;
 	content:"\f128";
-	margin-right: 10px;
+	margin-right: 16px;
 }
 .dashboard {
 	width: 350px;
@@ -253,4 +245,45 @@ h4::before{
 	font-family: FontAwesome;
 	content: "\f178";
 	margin-left: 10px;
+}
+input#check {
+	display:none;
+}
+#check+label {
+	cursor:pointer;
+	font-size: 13px;
+	color:#454545;
+}
+#check+label::before {
+	content:"";
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background-image: url(../img/sprite1.png);
+	background-position: 0px -20px;
+	margin:15px 5px -5px 0px;;
+}
+#check:checked+label::before{
+	background-position: 0px 0px;
+}
+.show {
+	display: block;
+	margin-top: 15px;
+	border-top: 1px solid #f1f1f0;
+}
+.hide {
+	display:none;
+}
+#show_hide {
+	cursor: pointer;
+}
+.save a {
+	display:table-cell;
+	height: 100%;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 13px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
 }
