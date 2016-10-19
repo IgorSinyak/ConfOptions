@@ -28,6 +28,7 @@ h2 {
 	overflow: hidden;
 }
 .button {
+	position: relative;
 	width:76px;
 	height:30px;
 	border-radius:4px;
@@ -46,6 +47,7 @@ h2 {
 	border-radius:3px;
 	float: left;
 	margin-right:4px;
+	transition: float 0,5s;
 	
 }
 .white_box a {
@@ -80,9 +82,10 @@ h3 {
 	background: #00a863;
 }
 .enabled .white_box {
-	float:right;
+	float: right;
 	margin: 0;
 	margin-left: 4px;
+	transition: float 0,5s;
 }
 i {
 	display: block;
@@ -127,6 +130,7 @@ i {
 	border-radius: 5px;
 	text-align: center;
 	padding-top: 35px;
+	
 }
 .selection li a:hover .green_check{
 	display: block;
