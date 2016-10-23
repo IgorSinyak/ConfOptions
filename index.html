@@ -2,7 +2,7 @@
 <html>
   <head>
   	<title>ConfOptions</title>
-    <meta content="text/html charset=utf-8">
+    <meta content="text/html" charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
 	  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -32,7 +32,7 @@
 	    <div id="widget_1">
 	    	<div class="head">
 	  	    <div id="button1" class="button disabled">
-	          <div class="white_box" onclick="move('button1');">
+	          <div class="white_box" id="white_box1">
 		          <a href="#"></a>
 	          </div>
 	          <i id="check1" class="fa fa-times"></i>
@@ -44,31 +44,31 @@
 	    <div id="widget_2">
 	    	<div class="head">
 	    	  <div id="button2" class="button enabled">
-	          <div class="white_box"  onclick="move('button2'); hide();">
+	          <div class="white_box">
 		          <a href="#"></a>
 	          </div>
-	          <i id="check2" class="fa fa-check"></i>
+	          <i class="fa fa-check"></i>
 		      </div>
 	        <h3>Widget 2</h3>
 	      </div>
 	      <div id="show_hide" class="show">
 	      <ul class="selection">
 	      	<li>
-	      		<a href="#" onclick="select(0, 1, 2);">
+	      		<a class="selector" href="#">
 	      			<div class="green_check">
 	      		  </div>
 	      		</a>
 	      		Below
 	      	</li>
 	      	<li>
-	      		<a href="#"  onclick="select(1, 2, 0);">
+	      		<a class="selector" href="#">
 	      			<div class="green_check">
 	      		  </div>
 	      		</a>
 	      		On
 	      	</li>
 	      	<li>
-	      		<a  href="#"  onclick="select(2, 1, 0);">
+	      		<a class="selector" href="#">
 	      			<div class="green_check">
 	      		   </div>
 	      		</a>

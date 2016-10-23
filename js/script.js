@@ -1,28 +1,44 @@
-function move(buttonNumber) {
-	var button = document.getElementById(buttonNumber);
-	if (button.className == "button enabled") {
-	  button.className = "button disabled";
-	  button.lastElementChild.className = "fa fa-times";
-	} else {
-	    button.className  = "button enabled";
-	    button.lastElementChild.className = "fa fa-check";
-	  }
-}
-function hide() {
-  if ($('#button2').hasClass("disabled")) {
-    $('#show_hide').slideUp();
-    var	fullScreen = document.documentElement.clientHeight + "px";
-	  document.getElementsByClassName("wrapper")[0].style.height = fullScreen;
-  } else {
-      $('#show_hide').slideDown(); 
-    }
-  }
-function select(a, b, c) {
-	if (document.getElementsByClassName("green_check")[a].style.display == "block"){
-  	document.getElementsByClassName("green_check")[a].style.display = "none"
-  } else{
-  document.getElementsByClassName("green_check")[a].style.display = "block";
-  document.getElementsByClassName("green_check")[b].style.display = "none";
-  document.getElementsByClassName("green_check")[c].style.display = "none";
-  } 
-}
+$(document).ready(function () {
+    //toggler
+    $(".white_box").click(function () {
+      var button = $(this).parent();
+      var check = button.children(".fa");
+      var widget = button.parent().parent();
+      if (button.hasClass("disabled")) {
+        button.removeClass("disabled").addClass("enabled");
+        check.removeClass("fa-times").addClass("fa-check");
+        if (widget.is("#widget_2")) {
+            $("#show_hide").slideDown();
+          }
+      } else { 
+          button.removeClass("enabled").addClass("disabled");
+          check.removeClass("fa-check").addClass("fa-times");
+          if (widget.is("#widget_2")) {
+            $("#show_hide").slideUp();
+          }
+      }
+    });
+    //selector
+    //select_onClick
+    $(".selector").click(function (){
+      if ($(this).hasClass("active")){
+        $(this).removeClass("active");
+        $(this).children().css("display", "none");
+      } else {
+      $(".selector").children().css("display", "none");
+      $(".selector").removeClass("active");
+      $(this).children().css("display", "block");
+      $(this).addClass("active");
+      }
+    });
+    //display_onHover
+    $(".selector").hover(function (){
+      if (!$(this).hasClass("active")){
+      $(this).children().css("display", "block");
+    }},
+    function () {
+      if (!$(this).hasClass("active")){
+      $(this).children().css("display", "none");
+    }});
+});
+

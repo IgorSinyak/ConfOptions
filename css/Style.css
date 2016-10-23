@@ -9,7 +9,8 @@
 	padding: 27px 50px 140px 50px;
 	margin: 0 auto;
 	background:#f1f1f1;
-}
+  min-height:730px;
+  }
 h2 {
 	font-size:27px;
 	font-family: verdana;
@@ -132,9 +133,7 @@ i {
 	padding-top: 35px;
 	
 }
-.selection li a:hover .green_check{
-	display: block;
-}
+
 .green_check::before{
 	font-family: FontAwesome;
 	content:"\f058";
