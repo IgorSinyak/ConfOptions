@@ -103,6 +103,7 @@ h3 {
 	margin-left: 4px;
 }
 
+
 i {
 	display: block;
 	padding: 7px;
@@ -220,6 +221,7 @@ form p {
 	list-style-position: inside;
 }
 
+
 h4 {
 	font-size: 15px;
 	font-weight: normal;
@@ -283,6 +285,7 @@ h4::before{
 	color: #ffffff;
 	font-weight: bold;
 }
+
 
 .dashboard a::after{
 	font-family: FontAwesome;
